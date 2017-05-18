@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:id="@+id/heading"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom alert box"
+            android:fontFamily="monospace"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="whatsapp"
+            android:id="@+id/whatsapp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/facebook"
+            android:layout_toRightOf="@+id/whatsapp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
